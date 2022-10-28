@@ -63,14 +63,15 @@ async def info(_, message):
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text(@kassim_darlzzz")
+    await message.reply_text("@kassim_darlzzz")
 
+    )
 
 luna.on_message(filters.command("luna") & ~filters.edited)
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text(sollu baby 💋❤")
+    await message.reply_text("sollu baby ❤💋")
 
 
 
