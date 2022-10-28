@@ -53,7 +53,7 @@ async def type_and_send(message):
 @luna.on_message(filters.command("info") & ~filters.edited)
 async def info(_, message):
     await message.reply_text(
-        "[Owner](@kassim_darlzzz)"
+        "[Owner](https://t.me/kassim_darlzzz)"
         + " | [Group](t.me/vanakkamda_mapla)",
         disable_web_page_preview=True,
     )
@@ -63,7 +63,15 @@ async def info(_, message):
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("/help - @kassim_darlzzz")
+    await message.reply_text(@kassim_darlzzz")
+
+
+luna.on_message(filters.command("luna") & ~filters.edited)
+async def start(_, message):
+    await luna.send_chat_action(message.chat.id, "typing")
+    await sleep(2)
+    await message.reply_text(sollu baby 💋❤")
+
 
 
 @luna.on_message(
